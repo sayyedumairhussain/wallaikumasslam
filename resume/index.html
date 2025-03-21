@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Falak Medical Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d0e7f9;
+            text-align: center;
+        }
+        header {
+            background: #5dade2;
+            color: white;
+            padding: 20px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-icon {
+            font-size: 40px;
+            margin-right: 20px;
+        }
+        .header-logo {
+            width: 100px;
+            height: 100px;
+        }
+        .header-text {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .contact, .map, .contact-form, .gallery {
+            background: #ffffff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #3498db;
+            border-radius: 5px;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+        footer {
+            background: #5dade2;
+            color: white;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .gallery {
+            background: #f3f9ff;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .gallery h2 {
+            margin-bottom: 20px;
+        }
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gallery-item {
+            position: relative;
+        }
+        .gallery img {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .plus-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-size: 24px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .gallery-item:hover .plus-icon {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="medi.png" alt="Medical Logo" class="header-logo">
+        <div class="header-text">
+            <h1>Welcome to Al Falak Medical Store</h1>
+            <p>At Al Falak Medical Store, we provide a wide variety of high-quality medicines, healthcare products, and excellent customer service. Visit us to experience the best in medical care and find all your pharmaceutical needs under one roof.</p>
+        </div>
+        <span class="header-icon">+</span>
+    </header>
+    
+    <section class="gallery">
+        <h2>Our Store & Products</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <span class="plus-icon">+</span>
+                <img src="img.png" alt="Medicines">
+            </div>
+            <div class="gallery-item">
+                <span class="plus-icon">+</span>
+                <img src="bye.png" alt="Medical Store">
+            </div>
+            <div class="gallery-item">
+                <span class="plus-icon">+</span>
+                <img src="medicin.png" alt="Pharmacy Shelves">
+            </div>
+            <div class="gallery-item">
+                <span class="plus-icon">+</span>
+                <img src="hi.png" alt="Healthcare Products">
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Phone:</strong> <a href="tel:09899063367">09899063367</a></p>
+        <p><strong>Email:</strong> <a href="mailto:y94600878@gmail.com">y94600878@gmail.com</a></p>
+        <p><strong>Address:</strong> A 39, Gali No. 8, New Seelampur, Chauhan Banger, Shahdara, Delhi, 110053</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Al Falak Medical Store. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
